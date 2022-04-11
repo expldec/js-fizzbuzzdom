@@ -8,3 +8,52 @@ body {
     background-color: #083b4c;
     font-family: sans-serif;
 }
+
+h1 {
+    color: white;
+    font-size: 10vw;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding: 2rem;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 8%;
+    margin: 1%;
+    background-color: #1389b2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2vw;
+}
+
+/* questo è un trucco che ho trovato su internet per fare un div quadrato responsive */
+.box:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  .box.fizz {
+    background-color: #0bd6a1;
+  }
+
+  .box.buzz {
+    background-color: #ffd166;
+  }
+
+  .box.fizzbuzz {
+    background-color: #f0466f;
+  }
